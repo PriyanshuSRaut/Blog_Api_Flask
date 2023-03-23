@@ -1,0 +1,2 @@
+class UserDefined(Exception):
+    pass
