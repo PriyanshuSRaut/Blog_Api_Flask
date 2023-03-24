@@ -9,3 +9,10 @@ CREATE TABLE
         token VARCHAR(255) DEFAULT "",
         PRIMARY KEY (id)
     );
+
+CREATE TABLE
+    blog_unverified_users(
+        id INT AUTO_INCREMENT,
+        user_email VARCHAR(255) NOT NULL,
+        PRIMARY KEY (id)
+    )

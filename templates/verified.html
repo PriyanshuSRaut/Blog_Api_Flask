@@ -1,0 +1,54 @@
+{% extends "base.html" %} {% block style %}
+<style>
+    body {
+        background: linear-gradient(to right, #8e2de2, #4a00e0);
+        font-family: "Open Sans", sans-serif;
+        color: #fff;
+        text-align: center;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+    }
+    .container {
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        border: 10px solid;
+        border-image: linear-gradient(to bottom right, #4a00e0, #8e2de2) 30;
+        border-image-slice: 1; /*background-clip: padding-box;*/
+        background-image: linear-gradient(to bottom right, #8e2de2, #4a00e0);
+    }
+    h1 {
+        font-size: 48px;
+        margin-bottom: 20px;
+    }
+    p {
+        font-size: 24px;
+        margin-bottom: 40px;
+    }
+    .btn {
+        display: inline-block;
+        padding: 12px 24px;
+        font-size: 20px;
+        background-color: #fff;
+        color: #333;
+        border-radius: 50px;
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+    .btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    }
+</style>
+{% endblock %} {% block content %}
+<div class="container">
+    <h1>Email Verified</h1>
+    <p>Congratulations! Your email has been verified.</p>
+    <a href="/" class="btn">Go to Homepage</a>
+</div>
+{% endblock %}
